@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model</title>
+        <style>
+            h1 { /*block-level*/
+
+                /* 
+                Para transformar um block-level em inline-level basta vc usar a propriedade:
+                display: inline;
+                */
+                background-color: lightgray;
+                height: 300px;
+                width: 300px;
+                border: 10px groove darkblue;
+                margin: 5px auto;
+                outline: 5px dotted green;
+            }
+            body { /* inline-level*/
+                font-family: Arial, Helvetica, sans-serif;
+                border: 10px dashed pink;
+            }
+            p { 
+                font-size: 1.3em;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links</a> são exemplos de caixas
+        inline-level. Vamos ver isso na prática</p>
+    </body>
+</html>
