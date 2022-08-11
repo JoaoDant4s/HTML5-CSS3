@@ -1,32 +1,61 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
 }
+a.link:link {
+    text-decoration: none;
+}
+a.link:visited {
+    text-decoration: none;
+}
+a.link:hover {
+    text-decoration: underline;
+}
 body {
     background-color: #D6D3B3;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+strong {
+    padding: 6px;
+    color: #1A5C37;
+}
+mark {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #7CDFA7;
 }
 header {
-    background-image: linear-gradient(to bottom, #28995d, #053718);
+    background-image: linear-gradient(to bottom, #2FA866, #053718);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 0px;
 }
 header > h1 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 55px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.863);
 }
 header > p {
-    padding: 25px;
+    padding: 35px;
     text-align: center;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.863);
 }
 header > nav {
+    padding-top: 43px;
     padding-left: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 header > nav > a#primeiro {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 header > nav > a {
     padding: 6px;
@@ -34,33 +63,98 @@ header > nav > a {
     font-weight: 600;
 }
 header > nav > a:link {
-    color: white;
+    color: #63eca3;
     text-decoration: none;
 }
 header > nav > a:visited {
-    color: white;
+    color: #63eca3;
     text-decoration: none;
 }
 header > nav > a:hover {
     background-color: #28995d;
     color: #053718;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 main {
-    background-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-main > div#pai {
-    margin-left: 13px;
-    margin-right: 13px;
+    background-color: #EBE5C5;
     position: relative;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
 }
-main > div > p {
+main > div#principal {
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main > div#principal > h1{
+    font-family: Android, 'Times New Roman', Times, serif;
+    color: #063D1E;
+}
+main > div#principal> h2{
+    padding-left: 10px;
+    margin-top: 15px;
+    background-image: linear-gradient(to right, #7CDFA7, #7cdfa70c);
+    font-family: Android, 'Times New Roman', Times, serif;
+    color: #2B8252;
+}
+main > div#principal > p {
+    line-height: 1.9;
+    padding: 0;
+    padding-top: 15px;
     text-indent: 30px;
     text-align: justify;
 }
-main > div > source > img.filho {
+main > div#principal > source > img.filho {
     position: absolute;
     right: 30px;
 }
+main > div#principal > iframe {
+    margin: 0;
+    margin-top: 15px;
+    background-color: #053718;
+    padding: 30px;
+}
+main > div#principal > div#lista > div#tabela{
+    display: flex;
+}
+main > div#principal > div#lista > p {
+    text-indent: 30px;
+    text-align: justify;
+}
+main > div#principal > div#lista {
+    margin-top: 40px;
+    background-color: #83E1AD;
+    border-radius: 20px 20px 12px 12px;
+}
+main > div#principal > div#lista > h3 {
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1A5C37;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+main > div#principal > div#lista > p {
+    padding: 15px;
+}
+main > div#principal > div#lista > div#tabela {
+    padding: 15px;
+}
+main > div#principal > div#lista > p.conteudo-lista {
+    line-height: 1.9;
+}
+footer > p {
+    background-color: #053718;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+    margin: 0;
+}
+footer > p > strong {
+    color: white;
+}
+
