@@ -14,6 +14,13 @@ header {
 }
 header > h1 {
     text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+nav {
+    background-color: rgb(92, 103, 114);
+    padding: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
 }
 nav > a{ 
     margin: 45px;
@@ -38,6 +45,24 @@ article > aside {
     background-color: rgb(72, 81, 90);
     color: white;
 }
+div#externalbox {
+    display: flex;
+    flex-direction: column;
+}
+div#bolinha1 {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 50%;
+}
+div#bolinha2 {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 100%;
+}
 a:link {
     color: white;
     text-decoration: none;
@@ -46,6 +71,9 @@ a:hover {
     color: cyan;
     text-decoration: underline;
 }
-a:active{
+a:active {
     color: darkblue;
+}
+a:visited {
+    color: cyan;
 }
