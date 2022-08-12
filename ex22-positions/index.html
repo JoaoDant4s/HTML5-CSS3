@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positions</title>
+        <style>
+            /*
+            static - flow no html, não é alterado por top, left, right e bottom
+            relative - flow no html, ela é alterada pelo top, left, right e bottom
+            fixed - posiciona em qualquer lugar da tela, é posicionada em relação ao html
+            absolute - posiciona em qualquer lugar e respeita o elemento pai
+            sticky - flow no html, ao passar pelo scroll, funciona como fixed
+            */
+            .position {
+                width: 500px;
+                height: 500px;
+                background-color: red;
+            }
+            .static {
+                /*padrão*/
+                position: static;
+                display: inline-block;
+            }
+            .relative {
+                position: relative;
+                background-color: darkblue;
+                display: inline-block;
+                top: 30px;
+                left: 50px;
+            }
+            .absolute { 
+                position: absolute;
+                background-color: purple;
+                display: inline-block;
+                top: 0;
+                left: 1200px;
+            }
+            .minidiv {
+                background-color: aquamarine;
+                height: 50px;
+                width: 50px;
+                top: 50px;
+                left: 50px;
+                display: inline-block  ;
+            }
+            .fixed {
+                position: fixed;
+                background: green;
+                height: 200px;
+                width: 200px;
+                bottom: 0;
+                right: 0;
+
+            }
+            .sticky {
+                background-color: chocolate;
+                position: sticky;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testando a propriedade position</h1>
+        <div class="position static"></div>
+        <div class="position relative">
+            <div class="absolute minidiv"></div>
+        </div>
+        <div class="position absolute"></div>
+        <div class="position fixed"></div>
+        <div class="position sticky"></div>
+        
+    </body>
+</html>
